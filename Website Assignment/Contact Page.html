@@ -1,0 +1,192 @@
+<html>
+<!--Colrick Weaver-->
+<style>
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+   color: white;
+   text-align: center;
+}
+</style>
+<title>Contact Us!!!</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<body>
+
+<header class="Main Header">
+  <font color="white"><h2>Colrick Weaver's Personal Profile</font></h2>
+</header>
+</head>
+<body>
+<div class="footer">
+  <p>copyright 2020 all rights reserved, powered by <strong>Colrick Weaver</strong></p>
+</div>
+</body>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: purple;
+  color: white;
+}
+
+h1 {
+	text-align:center;
+	background-color:#333;
+	color:purple;
+	}
+	
+h3	{
+	text-align:left;
+	color:purple;
+	}
+</style>
+</head>
+<div class="topnav">
+  <a href="Home Page.html">Home</a>
+  <a href="About Page.html">About</a>
+  <a href="Work Page.html">Work</a>
+  <a href="Activity Page.html">Activities</a>
+  <a href="Gallery Page.html">Gallery</a>
+  <a class="active" href="Contact Page.html">Contact</a>
+</div>
+
+</body>
+</head>
+<head>
+<h1>Contact Details</h1>
+</head>
+<body background="lightningstrike.jpg">
+<table border="1" bgcolor=
+<tr>
+<th><font color="white">Name</font></th>
+<th><font color="white">Number</font></th>
+<th><font color="white">E-Mail</font></th>
+</tr>
+<tr>
+<td><font color="white">Colrick Weaver</font></td>
+<td><font color="white">0212345678</font></td>
+<td><font color="white">colrick.smith82@gmail.com</font></td>
+</tr>
+
+</table>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+	color: gray;
+}
+
+input[type=submit] {
+    background-color: blue;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: maroon;
+}
+
+.container {
+    border-radius: 5px;
+    background-image: Thunderstrike.jpg;
+    padding: 20px;
+}
+</style>
+</head>
+<body>
+  <!--form validation using javascript-->
+<script>
+  function validateForm(){
+    var name = document.forms["contactForm"]["firstname"];
+     var phone = document.forms["contactForm"]["Phone Number"];
+     var email = document.forms["contactForm"]["country"];
+     
+
+     if (name.value == "")
+     {
+       window.alert("Please enter your name.");
+       return false
+     }
+
+     if (phone.value == "")
+     {
+       window.alert("Phone number required.");
+       return false;
+     }
+
+    
+     if (subject.selectedIndex < 1){
+       window.alert("Please choose a country");
+       return false;
+     }
+
+      return true;
+      window.alert("Thank You!!!");
+  }
+</script>
+<h1>Contact Form</h1>
+
+
+<div class="container">
+  <form name = "contactForm" action="Home Page.html" onsubmit="return validateForm()">
+    <label for="fname"><h3>Name and Surname<h3></label>
+    <input type="text" id="Name and Surname" name="firstname" placeholder="Your name..">
+
+    <label for="phNumber">Phone Number</label>
+    <input type="text" id="phnumber" name="Phone Number" placeholder="Your phone number..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="south africa">South Africa</option>
+      <option value="namibia">Namibia</option>
+      <option value="botswana">Botswana</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+	<p> We will call you as soon as possible!</p>
+  </form>
+</div>
+</body>
+</html>
